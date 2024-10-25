@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyEventsModelStoreContainer" CdmEntityContainer="MyEventsEntities1">
+    <EntitySetMapping Name="RegisterTbls">
+      <EntityTypeMapping TypeName="MyEventsModel.RegisterTbl">
+        <MappingFragment StoreEntitySet="RegisterTbl">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feedbacktbls">
+      <EntityTypeMapping TypeName="MyEventsModel.feedbacktbl">
+        <MappingFragment StoreEntitySet="feedbacktbl">
+          <ScalarProperty Name="Descript" ColumnName="Descript" />
+          <ScalarProperty Name="Ratings" ColumnName="Ratings" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Feedbackid" ColumnName="Feedbackid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="eventtbls">
+      <EntityTypeMapping TypeName="MyEventsModel.eventtbl">
+        <MappingFragment StoreEntitySet="eventtbl">
+          <ScalarProperty Name="EventImage" ColumnName="EventImage" />
+          <ScalarProperty Name="Program" ColumnName="Program" />
+          <ScalarProperty Name="Venue" ColumnName="Venue" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="Eventid" ColumnName="Eventid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

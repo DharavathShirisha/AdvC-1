@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyEventsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RegisterTbl">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="feedbacktbls" Relationship="MyEventsModel.FK__feedbackt__UserI__2D27B809" FromRole="RegisterTbl" ToRole="feedbacktbl" />
+  </EntityType>
+  <EntityContainer Name="MyEventsEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RegisterTbls" EntityType="Self.RegisterTbl" />
+    <EntitySet Name="feedbacktbls" EntityType="MyEventsModel.feedbacktbl" />
+    <AssociationSet Name="FK__feedbackt__UserI__2D27B809" Association="MyEventsModel.FK__feedbackt__UserI__2D27B809">
+      <End Role="RegisterTbl" EntitySet="RegisterTbls" />
+      <End Role="feedbacktbl" EntitySet="feedbacktbls" />
+    </AssociationSet>
+    <EntitySet Name="eventtbls" EntityType="MyEventsModel.eventtbl" />
+  </EntityContainer>
+  <EntityType Name="feedbacktbl">
+    <Key>
+      <PropertyRef Name="Feedbackid" />
+    </Key>
+    <Property Name="Feedbackid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Ratings" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Descript" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="RegisterTbl" Relationship="MyEventsModel.FK__feedbackt__UserI__2D27B809" FromRole="feedbacktbl" ToRole="RegisterTbl" />
+  </EntityType>
+  <Association Name="FK__feedbackt__UserI__2D27B809">
+    <End Type="MyEventsModel.RegisterTbl" Role="RegisterTbl" Multiplicity="0..1" />
+    <End Type="MyEventsModel.feedbacktbl" Role="feedbacktbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegisterTbl">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="feedbacktbl">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="eventtbl">
+    <Key>
+      <PropertyRef Name="Eventid" />
+    </Key>
+    <Property Name="Eventid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EDate" Type="DateTime" Precision="3" />
+    <Property Name="Venue" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Program" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="EventImage" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

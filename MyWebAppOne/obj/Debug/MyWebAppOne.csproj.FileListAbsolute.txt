@@ -1,0 +1,12 @@
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\MyWebAppOne.dll.config
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\MyWebAppOne.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\MyWebAppOne.pdb
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\obj\Debug\MyWebAppOne.csproj.AssemblyReference.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\obj\Debug\MyWebAppOne.csproj.CoreCompileInputs.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\obj\Debug\MyWebAppOne.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\obj\Debug\MyWebAppOne.pdb
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\EntityFramework.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\EntityFramework.SqlServer.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\EntityFramework.xml
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\bin\EntityFramework.SqlServer.xml
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\MyWebAppOne\obj\Debug\MyWebApp.1CE2BA71.Up2Date

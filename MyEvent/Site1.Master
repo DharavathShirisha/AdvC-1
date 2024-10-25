@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MyEvent.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <p>
+            <table style="width:100%;">
+                <tr>
+                    <td class="auto-style1" colspan="5">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/eve.jpg" Width="100%" Height="200px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    <td class="auto-style1">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                    </td>
+                    <td class="auto-style1">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Reports.aspx">Reports</asp:HyperLink>
+                    </td>
+                    <td class="auto-style1">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/MyEvents.aspx">MyEvents</asp:HyperLink>
+                    </td>
+                    <td class="auto-style1">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Feedback.aspx">Feedback</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </p>
+    </form>
+</body>
+</html>

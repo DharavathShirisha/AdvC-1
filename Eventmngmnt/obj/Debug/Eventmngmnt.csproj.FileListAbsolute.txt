@@ -1,0 +1,12 @@
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\Eventmngmnt.dll.config
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\Eventmngmnt.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\Eventmngmnt.pdb
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\EntityFramework.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\EntityFramework.SqlServer.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\EntityFramework.xml
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\bin\EntityFramework.SqlServer.xml
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\obj\Debug\Eventmngmnt.csproj.AssemblyReference.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\obj\Debug\Eventmngmnt.csproj.CoreCompileInputs.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\obj\Debug\Eventmng.6D34F1DF.Up2Date
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\obj\Debug\Eventmngmnt.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\Eventmngmnt\obj\Debug\Eventmngmnt.pdb

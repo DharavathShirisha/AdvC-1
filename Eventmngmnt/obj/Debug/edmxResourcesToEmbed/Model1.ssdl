@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyEventsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="eventtbl">
+    <Key>
+      <PropertyRef Name="Eventid" />
+    </Key>
+    <Property Name="Eventid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EDate" Type="datetime" />
+    <Property Name="Venue" Type="varchar" MaxLength="30" />
+    <Property Name="Program" Type="varchar" MaxLength="100" />
+    <Property Name="EventImage" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="feedbacktbl">
+    <Key>
+      <PropertyRef Name="Feedbackid" />
+    </Key>
+    <Property Name="Feedbackid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Ratings" Type="varchar" MaxLength="20" />
+    <Property Name="Descript" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="RegisterTbl">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <Association Name="FK__feedbackt__UserI__2D27B809">
+    <End Role="RegisterTbl" Type="Self.RegisterTbl" Multiplicity="0..1" />
+    <End Role="feedbacktbl" Type="Self.feedbacktbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegisterTbl">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="feedbacktbl">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyEventsModelStoreContainer">
+    <EntitySet Name="eventtbl" EntityType="Self.eventtbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="feedbacktbl" EntityType="Self.feedbacktbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegisterTbl" EntityType="Self.RegisterTbl" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__feedbackt__UserI__2D27B809" Association="Self.FK__feedbackt__UserI__2D27B809">
+      <End Role="RegisterTbl" EntitySet="RegisterTbl" />
+      <End Role="feedbacktbl" EntitySet="feedbacktbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

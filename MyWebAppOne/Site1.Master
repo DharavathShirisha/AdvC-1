@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MyWebAppOne.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .mycss1 {
+            font-family:Verdana
+        }
+        .u {
+            text-decoration:none
+        }
+        .auto-style4 {
+            height: 25px;
+        }
+        .auto-style13 {
+            height: 25px;
+            width: 268435904px;
+        }
+    </style>
+</head>
+<body style="height:303px">
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table class="auto-style7">
+            <tr>
+                <td class="auto-style3" colspan="6">
+                   
+                    
+                    <asp:Image ID="Image4" runat="server" Height="209px" ImageUrl="~/OIP.jfif" Width="100%" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style9" style="background-color: #00FFFF">
+                    &nbsp;</td>
+                <td style="background-color: #00FFFF" class="auto-style4">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/hello.aspx">Home</asp:HyperLink>
+                </td>
+                <td style="background-color: #00FFFF" class="auto-style4" colspan="2">
+                    <%
+                        if (Session["id"] == null)
+                        {
+                        %>
+                    <asp:HyperLink ID="LogIn" runat="server" NavigateUrl="~/LoginPage.aspx">LoginPage</asp:HyperLink>
+                    <%
+                        }
+                        else{
+                        %>
+                           
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" BackColor="Lime">Logout</asp:LinkButton>
+                            <% } %>
+                </td>
+                <td style="background-color: #00FFFF" class="auto-style4">
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Products.aspx">Products</asp:HyperLink>
+                </td>
+                <td style="background-color: #00FFFF" class="auto-style13">
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/ContactUs.aspx">ContactUs</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12" style="background-color: #00FFFF" colspan="3">
+                    &nbsp;</td>
+                <td class="auto-style4" style="background-color: #00FFFF" colspan="3">
+                    <asp:SiteMapPath ID="SiteMapPath2" runat="server">
+                    </asp:SiteMapPath>
+                    <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" colspan="4">
+                    <asp:TreeView ID="TreeView2" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:TreeView>
+                </td>
+                <td class="auto-style5" colspan="2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style11" colspan="6">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:Menu>
+&nbsp;<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style10" colspan="6">
+                    All rights Reserved .... WWW.myfashiomn.com/td></td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>

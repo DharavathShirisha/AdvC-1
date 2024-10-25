@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyEventsModelStoreContainer" CdmEntityContainer="MyEventsEntities">
+    <EntitySetMapping Name="eventtbls">
+      <EntityTypeMapping TypeName="MyEventsModel.eventtbl">
+        <MappingFragment StoreEntitySet="eventtbl">
+          <ScalarProperty Name="Eventid" ColumnName="Eventid" />
+          <ScalarProperty Name="EDate" ColumnName="EDate" />
+          <ScalarProperty Name="Venue" ColumnName="Venue" />
+          <ScalarProperty Name="Program" ColumnName="Program" />
+          <ScalarProperty Name="EventImage" ColumnName="EventImage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

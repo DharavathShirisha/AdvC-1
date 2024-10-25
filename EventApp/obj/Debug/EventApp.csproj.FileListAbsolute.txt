@@ -1,0 +1,12 @@
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EventApp.dll.config
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EventApp.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EventApp.pdb
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\obj\Debug\EventApp.csproj.AssemblyReference.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\obj\Debug\EventApp.csproj.CoreCompileInputs.cache
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\obj\Debug\EventApp.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\obj\Debug\EventApp.pdb
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EntityFramework.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EntityFramework.SqlServer.dll
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EntityFramework.xml
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\bin\EntityFramework.SqlServer.xml
+C:\Users\dharavath.shirisha\Desktop\Asp.net\Mywebappilicationone\EventApp\obj\Debug\EventApp.csproj.Up2Date
